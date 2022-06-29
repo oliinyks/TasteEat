@@ -1,2 +1,12 @@
-@import './common';
-@import './example';
+// @import './common';
+// @import './example';
+@import './base/normalize';
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './components/container';
+@import './components/common';
+@import './components/header';
+
+
+// font-family: 'Cormorant Infant', serif;
+// font-family: 'Josefin Sans', sans-serif;

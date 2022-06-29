@@ -1,0 +1,73 @@
+.header {
+}
+.header__inner {
+  padding: 30px 0;
+  border-bottom: 1px solid getColor('border');
+
+  @include for-phone-only {
+    text-align: center;
+  }
+
+  @include for-tablet-up {
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.header__phone {
+  display: none;
+  @include for-tablet-up {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5em;
+    width: 250px;
+
+    color: getColor('white');
+    border: 2px solid getColor('accent');
+  }
+
+  @include for-desktop-up {
+    padding: 20px 57px;
+    font-size: 22px;
+    width: auto;
+  }
+}
+.only-for-pc {
+  display: none;
+  @include for-desktop-up {
+    display: block;
+  }
+}
+.before-pc {
+  display: block;
+  @include for-desktop-up {
+    display: none;
+  }
+}
+.header__logo {
+  padding: 0 20px;
+}
+
+.button-fill {
+  display: none;
+  @include for-tablet-up {
+    display: block;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.5em;
+
+    color: getColor('primary-bg');
+    background-color: getColor('accent');
+  }
+
+  @include for-desktop-up {
+    font-size: 22px;
+    padding: 20px 85px;
+  }
+}
