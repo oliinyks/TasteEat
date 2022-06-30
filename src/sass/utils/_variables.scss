@@ -1,11 +1,9 @@
 $colors: (
-	'accent':rgba(225, 177, 104, 1),
-
-	'primary-bg':rgba(41, 46, 54, 1),
-
-	'primary-text':rgba(85, 85, 85, 1),
-	'white':rgba(255, 255, 255, 1),
-
+  'accent': rgba(225, 177, 104, 1),
+  'primary-bg': rgba(41, 46, 54, 1),
+  'border': rgba(92, 97, 104, 1),
+  'primary-text': rgba(85, 85, 85, 1),
+  'white': rgba(255, 255, 255, 1),
 );
 
 //приклад вставтляння кольору:: color: getColor('primary-text');
