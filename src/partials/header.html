@@ -58,25 +58,31 @@
         </ul>
       </nav>
     </div>
-    <div class="mobile-menu">
-      <button
-        class="mobile-menu__button"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mobile-menu__button"
-        data-menu-button
+  </div>
+  <div class="mobile-menu">
+    <button
+      class="mobile-menu__button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu__button"
+      data-menu-button
+    >
+      <svg
+        class="mobile-menu__img"
+        width="45"
+        height="22"
+        aria-label="Mobile menu switcher"
       >
-        <svg
-          class="mobile-menu__img"
-          width="45"
-          height="22"
-          aria-label="Mobile menu switcher"
-        >
-          <use class="icon-menu" href="images/sprite.svg#icon-burger"></use>
-          <use class="icon-close" href="images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu__list" data-menu>
+        <use class="icon-menu" href="images/sprite.svg#icon-burger"></use>
+        <use class="icon-close" href="images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mobile-menu__list" data-menu>
+      <ul class="mobile-menu__items">
+        <a class="mobile-menu__logo" href="./index.html"
+          ><svg class="mobile-menu__img" width="90" height="80">
+            <use href="images/sprite.svg#icon-logo"></use></svg
+        ></a>
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#">About Us</a>
         </li>
@@ -93,6 +99,6 @@
           <a class="mobile-menu__link" href="#">Contact Us</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 </header>
