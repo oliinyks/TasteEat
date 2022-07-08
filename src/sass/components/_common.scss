@@ -17,10 +17,59 @@ p {
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.5em;
   letter-spacing: 0.2px;
 
   color: getColor('primary-text');
   background-color: getColor('primary-bg');
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 57px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 1.5em;
+
+  color: getColor('accent');
+  border: 2px solid getColor('accent');
+
+  transition: color 250ms $timing-function, border 250ms $timing-function,
+    box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 2px solid getColor('white');
+    color: getColor('white');
+  }
+}
+
+.title {
+  font-family: 'Cormorant Infant';
+  font-size: 40px;
+  line-height: 1.4em;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+
+  color: getColor('primary-bg');
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

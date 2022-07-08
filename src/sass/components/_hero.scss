@@ -1,0 +1,56 @@
+.hero {
+}
+.hero__inner {
+  @include for-laptop-up {
+    display: flex;
+  }
+}
+
+.hero__description {
+  text-align: center;
+  padding: 180px 20px 202px 0px;
+  color: getColor('white');
+  @include for-laptop-only {
+    padding: 80px 5px 80px 0;
+    text-align: left;
+  }
+  @include for-phone-only {
+    padding: 30px 0;
+  }
+}
+
+.hero__title {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 50px;
+  line-height: 1.1em;
+  margin-bottom: 26px;
+  @include for-laptop-up {
+    font-size: 80px;
+  }
+  @include for-desktop-up {
+    font-size: 100px;
+  }
+}
+
+.hero__text {
+  margin-bottom: 36px;
+  max-width: 616px;
+}
+
+.hero__btn {
+}
+
+.hero__images {
+  display: none;
+  @include for-laptop-only {
+    margin-top: 40px;
+    display: block;
+    max-width: 400px;
+    height: auto;
+  }
+  @include for-desktop-up {
+    display: block;
+    max-width: 690px;
+    height: 790px;
+  }
+}

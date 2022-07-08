@@ -1,0 +1,89 @@
+.about-us {
+  background-color: getColor('extra-bg');
+}
+.about-us__items {
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 120px 0;
+  @include for-laptop-up {
+    display: flex;
+  }
+}
+
+.about-us__item {
+  display: flex;
+  & + .about-us__item {
+    margin-top: 20px;
+  }
+  @include for-laptop-up {
+    & + .about-us__item {
+      margin-left: 40px;
+      margin-top: 0;
+    }
+  }
+}
+.about-us-position {
+  margin-left: 20px;
+}
+.about-us__svg {
+}
+
+.about-us__title {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 30px;
+  line-height: 1.3em;
+}
+
+.about-us__text {
+}
+
+.about-us__description {
+  padding-bottom: 125px;
+  @include for-laptop-up {
+    display: flex;
+  }
+}
+
+.about-us__img {
+  max-width: 743px;
+  height: auto;
+}
+
+.about-us__box {
+  margin-left: 45px;
+}
+
+.about-us__subtitle {
+  margin-top: 30px;
+  text-align: left;
+  margin-bottom: 15px;
+  @include for-laptop-up {
+    margin-top: 0;
+  }
+}
+
+.about-us__content {
+  margin-bottom: 25px;
+}
+
+.about-us__years {
+  display: flex;
+}
+
+.about-us__year {
+  margin-bottom: 15px;
+}
+
+.about-us__yers-text {
+  margin-bottom: 20px;
+}
+
+.about-us__name {
+  margin-bottom: 20px;
+}
+.about-us__title-year {
+  text-align: left;
+}
+.about-us__signature {
+}
