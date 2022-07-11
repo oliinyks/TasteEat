@@ -4,9 +4,11 @@
 .about-us__items {
   justify-content: center;
   align-items: center;
-  padding: 100px 0 120px 0;
-  @include for-laptop-up {
+  padding: 70px 0 50px 0;
+
+  @include for-desktop-up {
     display: flex;
+    padding: 100px 0 120px 0;
   }
 }
 
@@ -15,7 +17,7 @@
   & + .about-us__item {
     margin-top: 20px;
   }
-  @include for-laptop-up {
+  @include for-desktop-up {
     & + .about-us__item {
       margin-left: 40px;
       margin-top: 0;
@@ -23,7 +25,10 @@
   }
 }
 .about-us-position {
-  margin-left: 20px;
+  margin-left: 15px;
+  @include for-laptop-up {
+    margin-left: 20px;
+  }
 }
 .about-us__svg {
 }
@@ -33,25 +38,41 @@
   margin-bottom: 5px;
   font-size: 30px;
   line-height: 1.3em;
+  @include for-phone-only {
+    font-size: 30px;
+  }
 }
 
 .about-us__text {
+  @include for-phone-only {
+    font-size: 16px;
+  }
 }
 
 .about-us__description {
-  padding-bottom: 125px;
+  padding-bottom: 60px;
   @include for-laptop-up {
     display: flex;
+    align-items: flex-start;
+    padding-bottom: 125px;
   }
 }
 
 .about-us__img {
-  max-width: 743px;
+  width: 100%;
   height: auto;
+  @include for-laptop-only {
+    width: 50%;
+  }
+  @include for-desktop-up {
+    max-width: 743px;
+  }
 }
 
 .about-us__box {
-  margin-left: 45px;
+  @include for-laptop-up {
+    margin-left: 45px;
+  }
 }
 
 .about-us__subtitle {
@@ -73,6 +94,9 @@
 
 .about-us__year {
   margin-bottom: 15px;
+  & + .about-us__year {
+    margin-left: 5px;
+  }
 }
 
 .about-us__yers-text {
