@@ -28,7 +28,12 @@ body {
     overflow: hidden;
   }
 }
-
+section {
+  padding: 80px 0;
+  @include for-laptop-up {
+    padding: 160px 0;
+  }
+}
 .button {
   display: inline-block;
   padding: 20px 57px;
@@ -37,6 +42,7 @@ body {
   line-height: 1.5em;
 
   color: getColor('accent');
+  background-color: transparent;
   border: 2px solid getColor('accent');
 
   transition: color 250ms $timing-function, border 250ms $timing-function,
@@ -57,7 +63,7 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   text-transform: capitalize;
-
+  margin: 0;
   color: getColor('primary-bg');
 }
 

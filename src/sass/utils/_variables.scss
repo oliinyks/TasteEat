@@ -5,6 +5,7 @@ $colors: (
   'border': rgba(92, 97, 104, 1),
   'primary-text': rgba(85, 85, 85, 1),
   'white': rgba(255, 255, 255, 1),
+  'backdrop': rgba(0, 0, 0, 0.2),
 );
 
 //приклад вставтляння кольору:: color: getColor('primary-text');

@@ -4,16 +4,17 @@
 .about-us__items {
   justify-content: center;
   align-items: center;
-  padding: 70px 0 50px 0;
+  margin-bottom: 50px;
 
   @include for-desktop-up {
     display: flex;
-    padding: 100px 0 120px 0;
+    margin-bottom: 100px;
   }
 }
 
 .about-us__item {
   display: flex;
+  align-items: center;
   & + .about-us__item {
     margin-top: 20px;
   }
@@ -31,6 +32,12 @@
   }
 }
 .about-us__svg {
+  width: 53px;
+  height: 53px;
+  @include for-tablet-up {
+    width: 83px;
+    height: 83px;
+  }
 }
 
 .about-us__title {
@@ -39,7 +46,8 @@
   font-size: 30px;
   line-height: 1.3em;
   @include for-phone-only {
-    font-size: 30px;
+    font-size: 28px;
+    margin-bottom: 0px;
   }
 }
 
@@ -50,11 +58,9 @@
 }
 
 .about-us__description {
-  padding-bottom: 60px;
   @include for-laptop-up {
     display: flex;
     align-items: flex-start;
-    padding-bottom: 125px;
   }
 }
 
