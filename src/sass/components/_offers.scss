@@ -1,0 +1,48 @@
+.offers {
+  background-color: getColor('white');
+  text-align: center;
+  padding-top: -80px;
+}
+.offers__text {
+  max-width: 830px;
+}
+
+.offers__prise {
+}
+
+.offers__name {
+}
+
+.offers__description {
+}
+
+.offers__items {
+  display: flex;
+}
+
+.offers__item {
+}
+
+.offers__dishes {
+}
+
+.offers__dishes-price {
+}
+
+.offers__dishes-description {
+}
+
+.offer {
+}
+.offers__images {
+}
+
+.offers__image {
+  max-width: 665px;
+  & + .offers__image {
+    margin-left: 30px;
+  }
+}
+
+.offers__dishes-name {
+}

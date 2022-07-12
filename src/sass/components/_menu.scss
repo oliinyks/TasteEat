@@ -6,16 +6,6 @@
     display: flex;
   }
 }
-.restaurant-menu__menu {
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1.46em;
-  letter-spacing: 3px;
-  color: getColor('primary-bg');
-  border-top: 1px solid getColor('accent');
-  border-bottom: 1px solid getColor('accent');
-  margin-bottom: 12px;
-}
 .restaurant-menu__description {
   margin-bottom: 30px;
   max-width: 490px;

@@ -66,7 +66,17 @@ section {
   margin: 0;
   color: getColor('primary-bg');
 }
-
+.little-title {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.46em;
+  letter-spacing: 3px;
+  color: getColor('primary-bg');
+  border-top: 1px solid getColor('accent');
+  border-bottom: 1px solid getColor('accent');
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
