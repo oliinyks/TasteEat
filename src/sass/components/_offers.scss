@@ -1,3 +1,8 @@
+.content-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
 .offers {
   background-color: getColor('white');
   text-align: center;
@@ -5,43 +10,134 @@
 }
 .offers__text {
   max-width: 830px;
-}
-
-.offers__prise {
-}
-
-.offers__name {
-}
-
-.offers__description {
-}
-
-.offers__items {
-  display: flex;
-}
-
-.offers__item {
-}
-
-.offers__dishes {
-}
-
-.offers__dishes-price {
-}
-
-.offers__dishes-description {
-}
-
-.offer {
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .offers__images {
+  margin-bottom: 60px;
+  @include for-laptop-up {
+    display: flex;
+    margin-bottom: 120px;
+  }
 }
 
 .offers__image {
-  max-width: 665px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  padding: 40px;
+
   & + .offers__image {
-    margin-left: 30px;
+    margin-top: 10px;
   }
+  @include for-laptop-up {
+    & + .offers__image {
+      margin-top: 0px;
+      margin-left: 30px;
+    }
+  }
+}
+.image-first {
+  background-image: url('../images/offers/burger.jpeg');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/offers/burger@2x.jpeg');
+    }
+  }
+}
+
+.image-second {
+  background-image: url('../images/offers/pizza.jpeg');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/offers/pizza@2x.jpeg');
+    }
+  }
+}
+
+//--------popylar dishes-----------
+
+.offers__only {
+  font-size: 15px;
+  padding-left: 4px;
+  text-transform: uppercase;
+}
+.offers__prise {
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 60px;
+  line-height: 0.6em;
+}
+
+.offers__name {
+  text-align: left;
+}
+
+.offers__description {
+  max-width: 245px;
+}
+
+.offers__items {
+  @include for-tablet-up {
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.offers__item {
+  @include for-phone-only {
+    margin: 0 auto;
+    & + .offers__item {
+      margin-top: 30px;
+    }
+  }
+  @include for-tablet-up {
+    padding: 10px;
+    max-width: 250px;
+  }
+  @include for-laptop-up {
+    max-width: 300px;
+  }
+  @include for-desktop-up {
+    & + .offers__item {
+      margin: 0;
+      padding: 15px;
+    }
+  }
+}
+.offers__img-food {
+  width: 100%;
+}
+.offers__dishes {
+}
+.offers__dishes-box {
+  margin-bottom: 15px;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid getColor('border');
+}
+.offes__dishes-name {
+  font-size: 30px;
+}
+.offers__dishes-price {
+  font-size: 30px;
+}
+
+.offers__dishes-description {
+  text-align: left;
+}
+
+.offer {
 }
 
 .offers__dishes-name {
