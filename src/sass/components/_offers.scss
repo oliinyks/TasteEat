@@ -62,7 +62,12 @@
 }
 
 //--------popylar dishes-----------
-
+.offers__popular-dishes {
+  display: none;
+  @include for-laptop-up {
+    display: block;
+  }
+}
 .offers__only {
   font-size: 15px;
   padding-left: 4px;
@@ -124,6 +129,7 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   border-bottom: 1px solid getColor('border');
 }
 .offes__dishes-name {
