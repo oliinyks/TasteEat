@@ -1,7 +1,8 @@
 .reservation {
   background-image: url('../images/reservation/reservation.jpeg');
   background-repeat: no-repeat;
-  background-size: contain;
+  //   background-size: contain;
+  width: 100%;
   background-position: center;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -16,7 +17,11 @@
   max-width: 920px;
   max-height: 680px;
   margin: 0 auto;
+  padding: 40px 20px;
   background-color: getColor('reservation-bg');
+  @include for-phone-only {
+    padding: 20px 10px;
+  }
 }
 .reservation__title {
   margin-bottom: 40px;
@@ -24,22 +29,27 @@
 }
 .reservation__little-title {
   color: getColor('white');
-  @include for-tablet-up {
-    margin-top: 143px;
-  }
 }
 
 //---------------form-------------------
 
 .form {
-  max-width: 640px;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
+  @include for-laptop-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+    margin-bottom: 25px;
+  }
 }
 
 .form__field {
   position: relative;
-  @include for-phone-only {
-    margin-top: 30px;
+  margin-top: 30px;
+  @include for-laptop-up {
+    margin-top: 0px;
+    margin: 15px;
   }
 }
 .form-input {
@@ -55,10 +65,13 @@
   &:not(:placeholder-shown) + .form-label {
     transform: translateY(-190%);
   }
+  @include for-laptop-up {
+    width: 300px;
+  }
 }
 
 .form-label {
-	pointer-events: none;
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: 23px;
@@ -68,20 +81,20 @@
   font-size: 22px;
   line-height: 1.5em;
   letter-spacing: 0.2px;
-	color:getColor('white');
+  color: getColor('white');
   transition: transform 250ms $timing-function;
 }
-.form__control{
-	position: relative;
+.form__control {
+  position: relative;
 }
-.form__svg{
-	position: absolute;
-	top: 50%;
-	right:10px;
-	transform: translateY(-50%);
-	pointer-events: none;
-	width: 50px;
-	height: 50px;
+.form__svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
 }
 
 //--------------button----------------------
