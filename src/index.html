@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <title>Taste Eat</title>
     <link rel="icon" href="./images/favicon.ico" type="image/any-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,5 +32,15 @@
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/read-more.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      config = {
+        enableTime: true,
+        dateFormat: 'Y-m-d H:i',
+        altInput: true,
+        altFormat: 'F j, Y (h:S K)',
+      };
+      flatpickr('input[type=datetime-local]', config);
+    </script>
   </body>
 </html>

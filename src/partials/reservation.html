@@ -1,37 +1,53 @@
 <section class="reservation">
   <div class="container">
     <div class="reservation__box">
-      <h3 class="little-title">reservation</h3>
-      <h2 class="reservation title">Book Your Table</h2>
+      <h3 class="reservation__little-title little-title">reservation</h3>
+      <h2 class="reservation__title title">Book Your Table</h2>
       <form class="form">
-        <input
-          class="form-input"
-          type="text"
-          name="username"
-          placeholder="Name"
-          autocomplete="name"
-        />
-        <input
-          class="form-input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          autocomplete="email"
-        />
-        <input
-          class="form-input"
-          type="number"
-          name="number"
-          placeholder="Persons"
-        />
-        <input
-          class="form-input"
-          type="time"
-          name="time"
-          placeholder="Timing"
-        />
-        <input class="form-input" type="date" name="date" placeholder="Date" />
+        <div class="form__field">
+          <input
+            class="form-input"
+            type="text"
+            name="username"
+            autocomplete="name"
+            placeholder=" "
+          />
+          <label for="username" class="form-label">Name</label>
+        </div>
+
+        <div class="form__field">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder=" "
+            autocomplete="email"
+          />
+          <label for="email" class="form-label">Email</label>
+        </div>
+
+        <div class="form__field">
+          <input
+            class="form-input"
+            type="number"
+            name="number"
+            placeholder=" "
+          />
+          <label for="number" class="form-label">Persons</label>
+        </div>
+
+        <div class="form__field">
+			  <input
+			  class="form-input form__control"
+			  name="date"
+			  placeholder=" "
+			   onfocus="(this.type='datetime-local')" onblur="if(!this.value)this.type='text'"
+			  />
+			  <label for="date" class="form-label">Date and time</label>
+			 	<img class="form__svg" src="images/about-us/reservation.svg"></img>
+        </div>
       </form>
+
       <button class="reservation__button" type="submit">Book A Table</button>
     </div>
   </div>
