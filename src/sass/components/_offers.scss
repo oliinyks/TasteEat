@@ -40,23 +40,23 @@
   }
 }
 .image-first {
-  background-image: url('.././images/offers/burger.jpeg');
+  background-image: url('../../../imagesoffers/burger.jpeg');
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
-      background-image: url('.././images/offers/burger@2x.jpeg');
+      background-image: url('../../../imagesoffers/burger@2x.jpeg');
     }
   }
 }
 
 .image-second {
-  background-image: url('.././images/offers/pizza.jpeg');
+  background-image: url('../../../imagesoffers/pizza.jpeg');
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
-      background-image: url('.././images/offers/pizza@2x.jpeg');
+      background-image: url('../../../imagesoffers/pizza@2x.jpeg');
     }
   }
 }

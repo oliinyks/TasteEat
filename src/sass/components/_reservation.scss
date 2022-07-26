@@ -1,5 +1,5 @@
 .reservation {
-  background-image: url('.././images/reservation/reservation.jpeg');
+  background-image: url('../../../imagesreservation/reservation.jpeg');
   background-repeat: no-repeat;
   //   background-size: contain;
   width: 100%;
@@ -8,7 +8,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
-      background-image: url('.././images/reservation/reservation@2x.jpeg');
+      background-image: url('../../../imagesreservation/reservation@2x.jpeg');
     }
   }
   text-align: center;
