@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://oliinyks.github.io/TasteEat.git",
+  "homepage": "https://oliinyks.github.io/TasteEat/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /TasteEat.git/"
+    "build": "parcel build src/*.html --public-url /TasteEat/"
   },
   "repository": {
     "type": "git",
