@@ -1,3 +1,23 @@
+//------------------arrow-up--------
+#goToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 200;
+
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover .gotoTop-img {
+    background-color: getColor('accent');
+    border-radius: 40px;
+  }
+}
+//-----------------header-----------
 .header__inner {
   position: relative;
 
@@ -28,7 +48,7 @@
     color: getColor('white');
     border: 2px solid getColor('accent');
 
-    transition: color 250ms $timing-function, color 250ms $timing-function;
+    transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {

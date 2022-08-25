@@ -81,6 +81,7 @@
 }
 .subscribe__form-input {
   margin-bottom: 20px;
+  height: auto;
   @include for-laptop-up {
     margin-bottom: 0;
   }
