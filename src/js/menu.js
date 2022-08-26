@@ -12,10 +12,9 @@
   function removeMenu(event) {
     if (event.target.classList.contains('mobile-menu__link')) {
       return toggleMenu();
-	 }
-	  if (!event.target.classList.contains('mobile-menu__items')) {
+    }
+    if (!event.target.classList.contains('mobile-menu__items')) {
       return toggleMenu();
     }
-	  console.log(event)
   }
 })();
