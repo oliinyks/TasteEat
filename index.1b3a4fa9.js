@@ -1,0 +1,2 @@
+(()=>{const t=document.querySelector("[data-menu-button]"),e=document.querySelector("[data-menu]");function n(){t.classList.toggle("is-open"),e.classList.toggle("is-open")}t.addEventListener("click",n),e.addEventListener("click",(function(t){if(t.target.classList.contains("mobile-menu__link"))return n();if(!t.target.classList.contains("mobile-menu__items"))return n()}))})();
+//# sourceMappingURL=index.1b3a4fa9.js.map
