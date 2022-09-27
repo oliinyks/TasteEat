@@ -12,6 +12,7 @@
             name="username"
             autocomplete="name"
             placeholder="."
+				required
           />
           <label for="username" class="form-label">Name</label>
         </div>
@@ -23,6 +24,7 @@
             name="email"
             placeholder="."
             autocomplete="email"
+				required
           />
           <label for="email" class="form-label">Email</label>
         </div>
@@ -33,6 +35,7 @@
             type="number"
             name="number"
             placeholder="."
+				required
           />
           <label for="number" class="form-label">Persons</label>
         </div>
@@ -43,7 +46,8 @@
 			  name="date"
 			  placeholder="."
 			   onfocus="(this.type='datetime-local')" onblur="if(!this.value)this.type='text'"
-			  />
+				required
+				/>
 			  <label for="date" class="form-label">Date and time</label>
 			 	<img class="form__svg" src="./images/about-us/reservation.svg" alt="content photo"></img>
         </div>

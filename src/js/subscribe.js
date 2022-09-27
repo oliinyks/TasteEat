@@ -1,8 +1,8 @@
 import Notiflix from 'notiflix';
 
-const formEl = document.querySelector('#form');
+const subscribeEl = document.querySelector('.subscribe__form');
 
-formEl.addEventListener('submit', onBtnSubmit);
+subscribeEl.addEventListener('submit', onBtnSubmit);
 
 function onBtnSubmit(e) {
   e.preventDefault();

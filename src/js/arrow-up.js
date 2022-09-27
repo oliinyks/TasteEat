@@ -1,21 +1,19 @@
-goToTopEl = document.querySelector('#goToTop');
-window.onscroll = function () {
-  scrollFunction();
-};
+const goToTopEl = document.querySelector('#goToTop');
+const headerEl = document.querySelector('#header');
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    goToTopEl.style.display = 'block';
+function arrowScrollTop() {
+  if (window.scrollY > 50) {
+	goToTopEl.style.display = 'block';
   } else {
-    goToTopEl.style.display = 'none';
+	goToTopEl.style.display = 'none';
   }
-}
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE     and Opera
+
+  goToTopEl.addEventListener('click', () => {
+	headerEl.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
 }
 
-goToTopEl.addEventListener('click', topFunction);
+window.addEventListener('scroll', arrowScrollTop);
