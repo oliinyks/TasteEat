@@ -1,4 +1,4 @@
-goToTopEl = document.getElementById('goToTop');
+goToTopEl = document.querySelector('#goToTop');
 window.onscroll = function () {
   scrollFunction();
 };
